@@ -55,7 +55,7 @@ const VideoPage = () => {
         })
       }, 2000)
 
-      const response = await axios.post('/api/predict/video', formData, {
+  const response = await axios.post('https://trash-detection-uiv3.onrender.com/api/predict/video', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },

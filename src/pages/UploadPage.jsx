@@ -39,7 +39,7 @@ const UploadPage = () => {
       const formData = new FormData()
       formData.append('file', file)
       
-      const response = await axios.post('/api/predict/image', formData, {
+      const response = await axios.post('https://trash-detection-uiv3.onrender.com/api/predict/image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
